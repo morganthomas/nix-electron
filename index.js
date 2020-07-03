@@ -6,6 +6,7 @@ glob('/nix/store/*-electron-[678].?.??(?)/', function (er, files) {
 		return require('electron');
 	} else if (files.length > 0) {
 		console.warn('More than one electron found in the nix store; falling back to npm');
+		console.log(files.join('\n');
 		return require('electron');
 	} else {
 		console.warn('Unique electron found in the nix store; using it');
