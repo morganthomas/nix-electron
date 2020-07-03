@@ -1,0 +1,22 @@
+{
+  "name": "nix-electron",
+  "version": "0.0.1",
+  "description": "Npm package for electron usage inside a nix-build. Assumes electron is installed in the nix environment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganthomas/nix-electron.git"
+  },
+  "author": "Morgan Thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morganthomas/nix-electron/issues"
+  },
+  "homepage": "https://github.com/morganthomas/nix-electron#readme",
+  "dependencies": {
+    "glob": "^7.1.6"
+  }
+}
