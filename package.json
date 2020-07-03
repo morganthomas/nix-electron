@@ -1,5 +1,5 @@
 {
-  "name": "nix-electron",
+  "name": "electron",
   "version": "0.0.1",
   "description": "Npm package for electron usage inside a nix-build. Assumes electron is installed in the nix environment.",
   "main": "index.js",
