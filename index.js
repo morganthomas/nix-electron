@@ -1,6 +1,6 @@
 const glob = require('glob');
 
-glob('/nix/store/*-electron_*/', function (er, files) {
+glob('/nix/store/*-electron-?.?.??(?)/', function (er, files) {
 	if (er || files.length == 0) {
 		console.warn('No electron found in the nix store; falling back to npm');
 		return require('electron');
@@ -9,6 +9,6 @@ glob('/nix/store/*-electron_*/', function (er, files) {
 		return require('electron');
 	} else {
 		console.warn('Unique electron found in the nix store; using it');
-		return files[0];
+		return files[0] + '/bin/electron';
 	}
 });
